@@ -2,7 +2,7 @@ import json
 from user_input import get_user_preferences
 from recipe_filter import filter_recipes
 from meal_plan import generate_meal_plan
-from shopping_list import create_shopping_list, display_shopping_list
+from shopping_list import create_shopping_list, display_shopping_list_gui
 
 
 def load_recipes(filepath):
@@ -26,7 +26,7 @@ def display_meal_plan(meal_plan):
 
 def display_shopping_list_and_generate(meal_plan):
     shopping_list = create_shopping_list(meal_plan)
-    display_shopping_list(shopping_list, meal_plan)
+    display_shopping_list_gui(meal_plan, shopping_list)
 
 def main():
     recipes = load_recipes('recipes_with_calories.json')
