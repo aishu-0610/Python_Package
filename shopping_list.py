@@ -19,7 +19,7 @@ def create_shopping_list(meal_plan):
     unique_ingredients.sort()
     return unique_ingredients
 
-def show_shopping_list_gui(meal_plan, shopping_list):
+def display_shopping_list_gui(meal_plan, shopping_list):
     def format_meal_plan_text():
         text = ""
         for i, recipe in enumerate(meal_plan, 1):
