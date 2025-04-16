@@ -53,3 +53,18 @@ def display_shopping_list_gui(meal_plan, shopping_list):
     shopping_text.insert(tk.END, format_shopping_list_text())
 
     root.mainloop()
+
+meal_plan = [
+    ("Spaghetti Bolognese", {
+        "calorie": 500,
+        "ingredients": ["Spaghetti", "Ground Beef", "Tomato Sauce", "Garlic"],
+        "steps": ["Boil spaghetti", "Cook beef", "Mix with sauce"]
+    }),
+    ("Chicken Salad", {
+        "calorie": 300,
+        "ingredients": ["Chicken", "Lettuce", "Tomatoes", "Cucumber"],
+        "steps": ["Grill chicken", "Chop veggies", "Mix together"]
+    }),
+]
+
+
