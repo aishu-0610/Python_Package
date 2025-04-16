@@ -2,7 +2,8 @@ import json
 from user_input import get_user_preferences
 from recipe_filter import filter_recipes
 from meal_plan import generate_meal_plan
-from shopping_list import create_shopping_list
+from shopping_list import create_shopping_list, display_shopping_list
+
 
 def load_recipes(filepath):
     with open(filepath, 'r') as file:
@@ -23,10 +24,9 @@ def display_meal_plan(meal_plan):
             print("-", step)
         print("--------------------------------------------------")
 
-def display_shopping_list(shopping_list):
-    print("\nGenerated Shopping List:")
-    for ingredient in shopping_list:
-        print("-", ingredient)
+def display_shopping_list_and_generate(meal_plan):
+    shopping_list = create_shopping_list(meal_plan)
+    display_shopping_list(shopping_list, meal_plan)
 
 def main():
     recipes = load_recipes('recipes_with_calories.json')
@@ -38,8 +38,7 @@ def main():
         print("\nNo matching recipes found for your preferences.")
     else:
         display_meal_plan(meal_plan)
-        shopping_list = create_shopping_list(meal_plan)
-        display_shopping_list(shopping_list)
+        display_shopping_list_and_generate(meal_plan)
 
 if __name__ == "__main__":
     main()
