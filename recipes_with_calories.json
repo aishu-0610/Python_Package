@@ -1,683 +1,732 @@
 {
-    "veg": {
-        "Paneer Butter Masala": {
-            "main": "paneer",
-            "ingredients": [
-                "paneer",
-                "butter",
-                "tomato",
-                "cream",
-                "spices"
-            ],
-            "steps": [
-                "Heat butter, add spices and tomato puree.",
-                "Add cream and paneer cubes.",
-                "Simmer and cook for 10 minutes."
-            ],
-            "calorie": 450
-        },
-        "Kadai Paneer": {
-            "main": "paneer",
-            "ingredients": [
-                "paneer",
-                "capsicum",
-                "onion",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Saut\u00e9 onion, tomato, and capsicum.",
-                "Add paneer cubes and cook with spices."
-            ],
-            "calorie": 450
-        },
-        "Palak Paneer": {
-            "main": "paneer",
-            "ingredients": [
-                "paneer",
-                "spinach",
-                "cream",
-                "garlic",
-                "spices"
-            ],
-            "steps": [
-                "Cook and blend spinach.",
-                "Add paneer and simmer with cream."
-            ],
-            "calorie": 450
-        },
-        "Paneer Tikka": {
-            "main": "paneer",
-            "ingredients": [
-                "paneer",
-                "curd",
-                "spices",
-                "capsicum",
-                "onion"
-            ],
-            "steps": [
-                "Marinate paneer and veggies.",
-                "Grill or bake till golden."
-            ],
-            "calorie": 450
-        },
-        "Mushroom Masala": {
-            "main": "mushroom",
-            "ingredients": [
-                "mushroom",
-                "onion",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Saut\u00e9 onion and tomato.",
-                "Add mushrooms and spices."
-            ],
-            "calorie": 150
-        },
-        "Mushroom Do Pyaza": {
-            "main": "mushroom",
-            "ingredients": [
-                "mushroom",
-                "onion",
-                "spices"
-            ],
-            "steps": [
-                "Saut\u00e9 mushrooms with double onion.",
-                "Cook with spices till done."
-            ],
-            "calorie": 150
-        },
-        "Mushroom Pulao": {
-            "main": "mushroom",
-            "ingredients": [
-                "mushroom",
-                "rice",
-                "whole spices",
-                "onion"
-            ],
-            "steps": [
-                "Cook mushrooms and spices.",
-                "Add rice and water. Cook until done."
-            ],
-            "calorie": 150
-        },
-        "Broccoli Stir Fry": {
-            "main": "broccoli",
-            "ingredients": [
-                "broccoli",
-                "garlic",
-                "soy sauce",
-                "oil"
-            ],
-            "steps": [
-                "Blanch broccoli.",
-                "Stir fry with garlic and soy sauce."
-            ],
-            "calorie": 120
-        },
-        "Broccoli Cheese Bake": {
-            "main": "broccoli",
-            "ingredients": [
-                "broccoli",
-                "cheese",
-                "white sauce"
-            ],
-            "steps": [
-                "Blanch broccoli.",
-                "Bake with white sauce and cheese."
-            ],
-            "calorie": 120
-        },
-        "Broccoli Soup": {
-            "main": "broccoli",
-            "ingredients": [
-                "broccoli",
-                "onion",
-                "milk",
-                "salt",
-                "pepper"
-            ],
-            "steps": [
-                "Boil broccoli and onion.",
-                "Blend and add milk, salt, pepper."
-            ],
-            "calorie": 120
-        },
-        "Aloo Gobi": {
-            "main": "potato",
-            "ingredients": [
-                "potato",
-                "cauliflower",
-                "spices"
-            ],
-            "steps": [
-                "Fry potato and cauliflower.",
-                "Cook with spices."
-            ],
-            "calorie": 300
-        },
-        "Bhindi Masala": {
-            "main": "okra",
-            "ingredients": [
-                "bhindi",
-                "onion",
-                "spices"
-            ],
-            "steps": [
-                "Saut\u00e9 bhindi till dry.",
-                "Add onion and spices."
-            ],
-            "calorie": 180
-        },
-        "Baingan Bharta": {
-            "main": "brinjal",
-            "ingredients": [
-                "brinjal",
-                "onion",
-                "tomato",
-                "garlic",
-                "spices"
-            ],
-            "steps": [
-                "Roast brinjal and mash.",
-                "Cook with onion, tomato, spices."
-            ],
-            "calorie": 200
-        },
-        "Mix Veg Curry": {
-            "main": "mixed veg",
-            "ingredients": [
-                "carrot",
-                "beans",
-                "peas",
-                "potato",
-                "spices"
-            ],
-            "steps": [
-                "Boil vegetables.",
-                "Cook with spices and gravy."
-            ],
-            "calorie": 250
-        },
-        "Vegetable Biryani": {
-            "main": "rice",
-            "ingredients": [
-                "rice",
-                "mixed veg",
-                "spices",
-                "curd"
-            ],
-            "steps": [
-                "Layer cooked vegetables and rice.",
-                "Cook with spices in dum."
-            ],
-            "calorie": 350
-        },
-        "Chana Masala": {
-            "main": "chickpeas",
-            "ingredients": [
-                "chana",
-                "onion",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Boil chana.",
-                "Cook with masala and gravy."
-            ],
-            "calorie": 350
-        },
-        "Rajma Curry": {
-            "main": "rajma",
-            "ingredients": [
-                "rajma",
-                "onion",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Boil rajma.",
-                "Cook with onion-tomato masala."
-            ],
-            "calorie": 330
-        },
-        "Dum Aloo": {
-            "main": "potato",
-            "ingredients": [
-                "baby potatoes",
-                "curd",
-                "spices"
-            ],
-            "steps": [
-                "Fry potatoes.",
-                "Cook in spiced curd gravy."
-            ],
-            "calorie": 300
-        },
-        "Vegetable Kofta": {
-            "main": "mixed veg",
-            "ingredients": [
-                "grated veg",
-                "besan",
-                "spices",
-                "tomato gravy"
-            ],
-            "steps": [
-                "Fry veg kofta balls.",
-                "Cook in tomato-based gravy."
-            ],
-            "calorie": 250
-        },
-        "Tawa Pulao": {
-            "main": "rice",
-            "ingredients": [
-                "rice",
-                "vegetables",
-                "pav bhaji masala"
-            ],
-            "steps": [
-                "Saut\u00e9 vegetables.",
-                "Add rice and masala. Mix well."
-            ],
-            "calorie": 350
-        },
-        "Paneer Bhurji": {
-            "main": "paneer",
-            "ingredients": [
-                "paneer",
-                "onion",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Saut\u00e9 onion and tomato.",
-                "Add crumbled paneer and cook."
-            ],
-            "calorie": 450
-        },
-        "Methi Malai Matar": {
-            "main": "methi",
-            "ingredients": [
-                "methi",
-                "peas",
-                "cream",
-                "spices"
-            ],
-            "steps": [
-                "Cook methi and peas.",
-                "Add cream and simmer."
-            ],
-            "calorie": 220
-        },
-        "Corn Palak": {
-            "main": "corn",
-            "ingredients": [
-                "corn",
-                "spinach",
-                "cream",
-                "spices"
-            ],
-            "steps": [
-                "Cook spinach and blend.",
-                "Add corn and cook with cream."
-            ],
-            "calorie": 280
-        },
-        "Vegetable Korma": {
-            "main": "mixed veg",
-            "ingredients": [
-                "veg",
-                "coconut",
-                "cashew",
-                "spices"
-            ],
-            "steps": [
-                "Make coconut-cashew paste.",
-                "Cook vegetables in it."
-            ],
-            "calorie": 250
-        },
-        "Paneer Makhani": {
-            "main": "paneer",
-            "ingredients": [
-                "paneer",
-                "butter",
-                "cream",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Prepare tomato-based gravy.",
-                "Add paneer, cream and cook."
-            ],
-            "calorie": 450
-        }
+  "veg": {
+    "Paneer Butter Masala": {
+      "main": "paneer",
+      "ingredients": [
+        "paneer",
+        "butter",
+        "tomato",
+        "cream",
+        "spices"
+      ],
+      "steps": [
+        "Heat butter, add spices and tomato puree.",
+        "Add cream and paneer cubes.",
+        "Simmer and cook for 10 minutes."
+      ],
+      "calorie": 450,
+      "cooking_time": 25
     },
-    "non-veg": {
-        "Chicken Curry": {
-            "main": "chicken",
-            "ingredients": [
-                "chicken",
-                "onion",
-                "tomato",
-                "garam masala",
-                "oil"
-            ],
-            "steps": [
-                "Heat oil and saut\u00e9 onions.",
-                "Add tomatoes and chicken with spices.",
-                "Cover and cook until chicken is done."
-            ],
-            "calorie": 400
-        },
-        "Butter Chicken": {
-            "main": "chicken",
-            "ingredients": [
-                "chicken",
-                "butter",
-                "cream",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Cook chicken in butter tomato gravy.",
-                "Finish with cream."
-            ],
-            "calorie": 400
-        },
-        "Chicken Tikka Masala": {
-            "main": "chicken",
-            "ingredients": [
-                "chicken",
-                "yogurt",
-                "spices",
-                "tomato puree"
-            ],
-            "steps": [
-                "Grill marinated chicken.",
-                "Add to tomato gravy."
-            ],
-            "calorie": 400
-        },
-        "Chicken Biryani": {
-            "main": "chicken",
-            "ingredients": [
-                "chicken",
-                "rice",
-                "spices",
-                "curd"
-            ],
-            "steps": [
-                "Cook chicken masala.",
-                "Layer with rice and cook dum."
-            ],
-            "calorie": 400
-        },
-        "Chicken 65": {
-            "main": "chicken",
-            "ingredients": [
-                "chicken",
-                "curd",
-                "spices",
-                "oil"
-            ],
-            "steps": [
-                "Marinate and deep fry chicken."
-            ],
-            "calorie": 400
-        },
-        "Mutton Curry": {
-            "main": "mutton",
-            "ingredients": [
-                "mutton",
-                "onion",
-                "tomato",
-                "yogurt",
-                "spices"
-            ],
-            "steps": [
-                "Cook mutton with masala and yogurt."
-            ],
-            "calorie": 500
-        },
-        "Mutton Biryani": {
-            "main": "mutton",
-            "ingredients": [
-                "mutton",
-                "rice",
-                "spices"
-            ],
-            "steps": [
-                "Cook mutton separately.",
-                "Layer with rice and dum cook."
-            ],
-            "calorie": 500
-        },
-        "Mutton Keema": {
-            "main": "mutton",
-            "ingredients": [
-                "minced mutton",
-                "onion",
-                "spices"
-            ],
-            "steps": [
-                "Cook minced mutton with spices."
-            ],
-            "calorie": 500
-        },
-        "Fish Curry": {
-            "main": "fish",
-            "ingredients": [
-                "fish",
-                "coconut",
-                "spices",
-                "tamarind"
-            ],
-            "steps": [
-                "Make coconut masala.",
-                "Add fish and simmer."
-            ],
-            "calorie": 300
-        },
-        "Fish Fry": {
-            "main": "fish",
-            "ingredients": [
-                "fish",
-                "turmeric",
-                "chilli powder",
-                "oil"
-            ],
-            "steps": [
-                "Marinate fish in spices.",
-                "Shallow fry until golden."
-            ],
-            "calorie": 300
-        },
-        "Grilled Fish": {
-            "main": "fish",
-            "ingredients": [
-                "fish",
-                "lemon",
-                "garlic",
-                "herbs"
-            ],
-            "steps": [
-                "Marinate and grill fish."
-            ],
-            "calorie": 300
-        },
-        "Fish Tikka": {
-            "main": "fish",
-            "ingredients": [
-                "fish",
-                "curd",
-                "spices"
-            ],
-            "steps": [
-                "Marinate in spiced curd.",
-                "Grill till cooked."
-            ],
-            "calorie": 300
-        },
-        "Prawn Masala": {
-            "main": "prawn",
-            "ingredients": [
-                "prawn",
-                "onion",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Cook onion and tomato masala.",
-                "Add prawns and simmer."
-            ],
-            "calorie": 250
-        },
-        "Prawn Biryani": {
-            "main": "prawn",
-            "ingredients": [
-                "prawn",
-                "rice",
-                "spices"
-            ],
-            "steps": [
-                "Cook prawn masala.",
-                "Layer with rice and cook."
-            ],
-            "calorie": 250
-        },
-        "Egg Curry": {
-            "main": "egg",
-            "ingredients": [
-                "egg",
-                "onion",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Boil eggs and cook in gravy."
-            ],
-            "calorie": 150
-        },
-        "Egg Bhurji": {
-            "main": "egg",
-            "ingredients": [
-                "egg",
-                "onion",
-                "tomato",
-                "spices"
-            ],
-            "steps": [
-                "Scramble eggs with onion-tomato masala."
-            ],
-            "calorie": 150
-        },
-        "Egg Fried Rice": {
-            "main": "egg",
-            "ingredients": [
-                "egg",
-                "rice",
-                "soy sauce",
-                "veggies"
-            ],
-            "steps": [
-                "Stir fry egg and rice with veggies."
-            ],
-            "calorie": 150
-        },
-        "Chicken Pakora": {
-            "main": "chicken",
-            "ingredients": [
-                "chicken",
-                "gram flour",
-                "spices"
-            ],
-            "steps": [
-                "Marinate and deep fry chicken in batter."
-            ],
-            "calorie": 400
-        },
-        "Prawn Fried Rice": {
-            "main": "prawn",
-            "ingredients": [
-                "prawn",
-                "rice",
-                "soy sauce",
-                "vegetables"
-            ],
-            "steps": [
-                "Cook prawn with rice and veggies."
-            ],
-            "calorie": 250
-        },
-        "Chicken Manchurian": {
-            "main": "chicken",
-            "ingredients": [
-                "chicken",
-                "soy sauce",
-                "ginger",
-                "garlic",
-                "cornflour"
-            ],
-            "steps": [
-                "Fry chicken balls.",
-                "Toss in spicy sauce."
-            ],
-            "calorie": 400
-        },
-        "Fish Moilee": {
-            "main": "fish",
-            "ingredients": [
-                "fish",
-                "coconut milk",
-                "turmeric",
-                "chilli"
-            ],
-            "steps": [
-                "Cook fish in coconut milk-based gravy."
-            ],
-            "calorie": 300
-        },
-        "Egg Toast": {
-            "main": "egg",
-            "ingredients": [
-                "egg",
-                "bread",
-                "pepper",
-                "salt"
-            ],
-            "steps": [
-                "Dip bread in egg mix and toast."
-            ],
-            "calorie": 150
-        },
-        "Chicken Soup": {
-            "main": "chicken",
-            "ingredients": [
-                "chicken",
-                "pepper",
-                "carrot",
-                "onion"
-            ],
-            "steps": [
-                "Boil chicken with veggies and pepper."
-            ],
-            "calorie": 400
-        },
-        "Egg Korma": {
-            "main": "egg",
-            "ingredients": [
-                "egg",
-                "cashew",
-                "onion",
-                "spices"
-            ],
-            "steps": [
-                "Make creamy korma gravy.",
-                "Add boiled eggs."
-            ],
-            "calorie": 150
-        }
+    "Kadai Paneer": {
+      "main": "paneer",
+      "ingredients": [
+        "paneer",
+        "capsicum",
+        "onion",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Saut\u00e9 onion, tomato, and capsicum.",
+        "Add paneer cubes and cook with spices."
+      ],
+      "calorie": 450,
+      "cooking_time": 25
+    },
+    "Palak Paneer": {
+      "main": "paneer",
+      "ingredients": [
+        "paneer",
+        "spinach",
+        "cream",
+        "garlic",
+        "spices"
+      ],
+      "steps": [
+        "Cook and blend spinach.",
+        "Add paneer and simmer with cream."
+      ],
+      "calorie": 450,
+      "cooking_time": 25
+    },
+    "Paneer Tikka": {
+      "main": "paneer",
+      "ingredients": [
+        "paneer",
+        "curd",
+        "spices",
+        "capsicum",
+        "onion"
+      ],
+      "steps": [
+        "Marinate paneer and veggies.",
+        "Grill or bake till golden."
+      ],
+      "calorie": 450,
+      "cooking_time": 25
+    },
+    "Mushroom Masala": {
+      "main": "mushroom",
+      "ingredients": [
+        "mushroom",
+        "onion",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Saut\u00e9 onion and tomato.",
+        "Add mushrooms and spices."
+      ],
+      "calorie": 150,
+      "cooking_time": 20
+    },
+    "Mushroom Do Pyaza": {
+      "main": "mushroom",
+      "ingredients": [
+        "mushroom",
+        "onion",
+        "spices"
+      ],
+      "steps": [
+        "Saut\u00e9 mushrooms with double onion.",
+        "Cook with spices till done."
+      ],
+      "calorie": 150,
+      "cooking_time": 20
+    },
+    "Mushroom Pulao": {
+      "main": "mushroom",
+      "ingredients": [
+        "mushroom",
+        "rice",
+        "whole spices",
+        "onion"
+      ],
+      "steps": [
+        "Cook mushrooms and spices.",
+        "Add rice and water. Cook until done."
+      ],
+      "calorie": 150,
+      "cooking_time": 20
+    },
+    "Broccoli Stir Fry": {
+      "main": "broccoli",
+      "ingredients": [
+        "broccoli",
+        "garlic",
+        "soy sauce",
+        "oil"
+      ],
+      "steps": [
+        "Blanch broccoli.",
+        "Stir fry with garlic and soy sauce."
+      ],
+      "calorie": 120,
+      "cooking_time": 20
+    },
+    "Broccoli Cheese Bake": {
+      "main": "broccoli",
+      "ingredients": [
+        "broccoli",
+        "cheese",
+        "white sauce"
+      ],
+      "steps": [
+        "Blanch broccoli.",
+        "Bake with white sauce and cheese."
+      ],
+      "calorie": 120,
+      "cooking_time": 20
+    },
+    "Broccoli Soup": {
+      "main": "broccoli",
+      "ingredients": [
+        "broccoli",
+        "onion",
+        "milk",
+        "salt",
+        "pepper"
+      ],
+      "steps": [
+        "Boil broccoli and onion.",
+        "Blend and add milk, salt, pepper."
+      ],
+      "calorie": 120,
+      "cooking_time": 20
+    },
+    "Aloo Gobi": {
+      "main": "potato",
+      "ingredients": [
+        "potato",
+        "cauliflower",
+        "spices"
+      ],
+      "steps": [
+        "Fry potato and cauliflower.",
+        "Cook with spices."
+      ],
+      "calorie": 300,
+      "cooking_time": 30
+    },
+    "Bhindi Masala": {
+      "main": "okra",
+      "ingredients": [
+        "bhindi",
+        "onion",
+        "spices"
+      ],
+      "steps": [
+        "Saut\u00e9 bhindi till dry.",
+        "Add onion and spices."
+      ],
+      "calorie": 180,
+      "cooking_time": 25
+    },
+    "Baingan Bharta": {
+      "main": "brinjal",
+      "ingredients": [
+        "brinjal",
+        "onion",
+        "tomato",
+        "garlic",
+        "spices"
+      ],
+      "steps": [
+        "Roast brinjal and mash.",
+        "Cook with onion, tomato, spices."
+      ],
+      "calorie": 200,
+      "cooking_time": 35
+    },
+    "Mix Veg Curry": {
+      "main": "mixed veg",
+      "ingredients": [
+        "carrot",
+        "beans",
+        "peas",
+        "potato",
+        "spices"
+      ],
+      "steps": [
+        "Boil vegetables.",
+        "Cook with spices and gravy."
+      ],
+      "calorie": 250,
+      "cooking_time": 30
+    },
+    "Vegetable Biryani": {
+      "main": "rice",
+      "ingredients": [
+        "rice",
+        "mixed veg",
+        "spices",
+        "curd"
+      ],
+      "steps": [
+        "Layer cooked vegetables and rice.",
+        "Cook with spices in dum."
+      ],
+      "calorie": 350,
+      "cooking_time": 30
+    },
+    "Chana Masala": {
+      "main": "chickpeas",
+      "ingredients": [
+        "chana",
+        "onion",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Boil chana.",
+        "Cook with masala and gravy."
+      ],
+      "calorie": 350,
+      "cooking_time": 40
+    },
+    "Rajma Curry": {
+      "main": "rajma",
+      "ingredients": [
+        "rajma",
+        "onion",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Boil rajma.",
+        "Cook with onion-tomato masala."
+      ],
+      "calorie": 330,
+      "cooking_time": 45
+    },
+    "Dum Aloo": {
+      "main": "potato",
+      "ingredients": [
+        "baby potatoes",
+        "curd",
+        "spices"
+      ],
+      "steps": [
+        "Fry potatoes.",
+        "Cook in spiced curd gravy."
+      ],
+      "calorie": 300,
+      "cooking_time": 30
+    },
+    "Vegetable Kofta": {
+      "main": "mixed veg",
+      "ingredients": [
+        "grated veg",
+        "besan",
+        "spices",
+        "tomato gravy"
+      ],
+      "steps": [
+        "Fry veg kofta balls.",
+        "Cook in tomato-based gravy."
+      ],
+      "calorie": 250,
+      "cooking_time": 30
+    },
+    "Tawa Pulao": {
+      "main": "rice",
+      "ingredients": [
+        "rice",
+        "vegetables",
+        "pav bhaji masala"
+      ],
+      "steps": [
+        "Saut\u00e9 vegetables.",
+        "Add rice and masala. Mix well."
+      ],
+      "calorie": 350,
+      "cooking_time": 30
+    },
+    "Paneer Bhurji": {
+      "main": "paneer",
+      "ingredients": [
+        "paneer",
+        "onion",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Saut\u00e9 onion and tomato.",
+        "Add crumbled paneer and cook."
+      ],
+      "calorie": 450,
+      "cooking_time": 25
+    },
+    "Methi Malai Matar": {
+      "main": "methi",
+      "ingredients": [
+        "methi",
+        "peas",
+        "cream",
+        "spices"
+      ],
+      "steps": [
+        "Cook methi and peas.",
+        "Add cream and simmer."
+      ],
+      "calorie": 220,
+      "cooking_time": 25
+    },
+    "Corn Palak": {
+      "main": "corn",
+      "ingredients": [
+        "corn",
+        "spinach",
+        "cream",
+        "spices"
+      ],
+      "steps": [
+        "Cook spinach and blend.",
+        "Add corn and cook with cream."
+      ],
+      "calorie": 280,
+      "cooking_time": 25
+    },
+    "Vegetable Korma": {
+      "main": "mixed veg",
+      "ingredients": [
+        "veg",
+        "coconut",
+        "cashew",
+        "spices"
+      ],
+      "steps": [
+        "Make coconut-cashew paste.",
+        "Cook vegetables in it."
+      ],
+      "calorie": 250,
+      "cooking_time": 30
+    },
+    "Paneer Makhani": {
+      "main": "paneer",
+      "ingredients": [
+        "paneer",
+        "butter",
+        "cream",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Prepare tomato-based gravy.",
+        "Add paneer, cream and cook."
+      ],
+      "calorie": 450,
+      "cooking_time": 25
     }
+  },
+  "non-veg": {
+    "Chicken Curry": {
+      "main": "chicken",
+      "ingredients": [
+        "chicken",
+        "onion",
+        "tomato",
+        "garam masala",
+        "oil"
+      ],
+      "steps": [
+        "Heat oil and saut\u00e9 onions.",
+        "Add tomatoes and chicken with spices.",
+        "Cover and cook until chicken is done."
+      ],
+      "calorie": 400,
+      "cooking_time": 40
+    },
+    "Butter Chicken": {
+      "main": "chicken",
+      "ingredients": [
+        "chicken",
+        "butter",
+        "cream",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Cook chicken in butter tomato gravy.",
+        "Finish with cream."
+      ],
+      "calorie": 400,
+      "cooking_time": 40
+    },
+    "Chicken Tikka Masala": {
+      "main": "chicken",
+      "ingredients": [
+        "chicken",
+        "yogurt",
+        "spices",
+        "tomato puree"
+      ],
+      "steps": [
+        "Grill marinated chicken.",
+        "Add to tomato gravy."
+      ],
+      "calorie": 400,
+      "cooking_time": 40
+    },
+    "Chicken Biryani": {
+      "main": "chicken",
+      "ingredients": [
+        "chicken",
+        "rice",
+        "spices",
+        "curd"
+      ],
+      "steps": [
+        "Cook chicken masala.",
+        "Layer with rice and cook dum."
+      ],
+      "calorie": 400,
+      "cooking_time": 40
+    },
+    "Chicken 65": {
+      "main": "chicken",
+      "ingredients": [
+        "chicken",
+        "curd",
+        "spices",
+        "oil"
+      ],
+      "steps": [
+        "Marinate and deep fry chicken."
+      ],
+      "calorie": 400,
+      "cooking_time": 40
+    },
+    "Mutton Curry": {
+      "main": "mutton",
+      "ingredients": [
+        "mutton",
+        "onion",
+        "tomato",
+        "yogurt",
+        "spices"
+      ],
+      "steps": [
+        "Cook mutton with masala and yogurt."
+      ],
+      "calorie": 500,
+      "cooking_time": 75
+    },
+    "Mutton Biryani": {
+      "main": "mutton",
+      "ingredients": [
+        "mutton",
+        "rice",
+        "spices"
+      ],
+      "steps": [
+        "Cook mutton separately.",
+        "Layer with rice and dum cook."
+      ],
+      "calorie": 500,
+      "cooking_time": 75
+    },
+    "Mutton Keema": {
+      "main": "mutton",
+      "ingredients": [
+        "minced mutton",
+        "onion",
+        "spices"
+      ],
+      "steps": [
+        "Cook minced mutton with spices."
+      ],
+      "calorie": 500,
+      "cooking_time": 75
+    },
+    "Fish Curry": {
+      "main": "fish",
+      "ingredients": [
+        "fish",
+        "coconut",
+        "spices",
+        "tamarind"
+      ],
+      "steps": [
+        "Make coconut masala.",
+        "Add fish and simmer."
+      ],
+      "calorie": 300,
+      "cooking_time": 30
+    },
+    "Fish Fry": {
+      "main": "fish",
+      "ingredients": [
+        "fish",
+        "turmeric",
+        "chilli powder",
+        "oil"
+      ],
+      "steps": [
+        "Marinate fish in spices.",
+        "Shallow fry until golden."
+      ],
+      "calorie": 300,
+      "cooking_time": 30
+    },
+    "Grilled Fish": {
+      "main": "fish",
+      "ingredients": [
+        "fish",
+        "lemon",
+        "garlic",
+        "herbs"
+      ],
+      "steps": [
+        "Marinate and grill fish."
+      ],
+      "calorie": 300,
+      "cooking_time": 30
+    },
+    "Fish Tikka": {
+      "main": "fish",
+      "ingredients": [
+        "fish",
+        "curd",
+        "spices"
+      ],
+      "steps": [
+        "Marinate in spiced curd.",
+        "Grill till cooked."
+      ],
+      "calorie": 300,
+      "cooking_time": 30
+    },
+    "Prawn Masala": {
+      "main": "prawn",
+      "ingredients": [
+        "prawn",
+        "onion",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Cook onion and tomato masala.",
+        "Add prawns and simmer."
+      ],
+      "calorie": 250,
+      "cooking_time": 25
+    },
+    "Prawn Biryani": {
+      "main": "prawn",
+      "ingredients": [
+        "prawn",
+        "rice",
+        "spices"
+      ],
+      "steps": [
+        "Cook prawn masala.",
+        "Layer with rice and cook."
+      ],
+      "calorie": 250,
+      "cooking_time": 25
+    },
+    "Egg Curry": {
+      "main": "egg",
+      "ingredients": [
+        "egg",
+        "onion",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Boil eggs and cook in gravy."
+      ],
+      "calorie": 150,
+      "cooking_time": 20
+    },
+    "Egg Bhurji": {
+      "main": "egg",
+      "ingredients": [
+        "egg",
+        "onion",
+        "tomato",
+        "spices"
+      ],
+      "steps": [
+        "Scramble eggs with onion-tomato masala."
+      ],
+      "calorie": 150,
+      "cooking_time": 20
+    },
+    "Egg Fried Rice": {
+      "main": "egg",
+      "ingredients": [
+        "egg",
+        "rice",
+        "soy sauce",
+        "veggies"
+      ],
+      "steps": [
+        "Stir fry egg and rice with veggies."
+      ],
+      "calorie": 150,
+      "cooking_time": 20
+    },
+    "Chicken Pakora": {
+      "main": "chicken",
+      "ingredients": [
+        "chicken",
+        "gram flour",
+        "spices"
+      ],
+      "steps": [
+        "Marinate and deep fry chicken in batter."
+      ],
+      "calorie": 400,
+      "cooking_time": 40
+    },
+    "Prawn Fried Rice": {
+      "main": "prawn",
+      "ingredients": [
+        "prawn",
+        "rice",
+        "soy sauce",
+        "vegetables"
+      ],
+      "steps": [
+        "Cook prawn with rice and veggies."
+      ],
+      "calorie": 250,
+      "cooking_time": 25
+    },
+    "Chicken Manchurian": {
+      "main": "chicken",
+      "ingredients": [
+        "chicken",
+        "soy sauce",
+        "ginger",
+        "garlic",
+        "cornflour"
+      ],
+      "steps": [
+        "Fry chicken balls.",
+        "Toss in spicy sauce."
+      ],
+      "calorie": 400,
+      "cooking_time": 40
+    },
+    "Fish Moilee": {
+      "main": "fish",
+      "ingredients": [
+        "fish",
+        "coconut milk",
+        "turmeric",
+        "chilli"
+      ],
+      "steps": [
+        "Cook fish in coconut milk-based gravy."
+      ],
+      "calorie": 300,
+      "cooking_time": 30
+    },
+    "Egg Toast": {
+      "main": "egg",
+      "ingredients": [
+        "egg",
+        "bread",
+        "pepper",
+        "salt"
+      ],
+      "steps": [
+        "Dip bread in egg mix and toast."
+      ],
+      "calorie": 150,
+      "cooking_time": 20
+    },
+    "Chicken Soup": {
+      "main": "chicken",
+      "ingredients": [
+        "chicken",
+        "pepper",
+        "carrot",
+        "onion"
+      ],
+      "steps": [
+        "Boil chicken with veggies and pepper."
+      ],
+      "calorie": 400,
+      "cooking_time": 40
+    },
+    "Egg Korma": {
+      "main": "egg",
+      "ingredients": [
+        "egg",
+        "cashew",
+        "onion",
+        "spices"
+      ],
+      "steps": [
+        "Make creamy korma gravy.",
+        "Add boiled eggs."
+      ],
+      "calorie": 150,
+      "cooking_time": 20
+    }
+  }
 }
