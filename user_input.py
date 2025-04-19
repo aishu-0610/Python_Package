@@ -12,28 +12,26 @@ def get_user_preferences():
         health_goal = input("Enter your health goal: ").strip().lower()
 
     avoid_input = input("List any ingredients to avoid (comma-separated). Leave blank if none: ").strip()
-    if avoid_input == "":
-        avoid_ingredients = []
-    else:
-        avoid_ingredients = []
-        for item in avoid_input.split(","):
-            cleaned = item.strip().lower()
-            if cleaned != "":
-                avoid_ingredients.append(cleaned)
+    avoid_ingredients = [item.strip().lower() for item in avoid_input.split(",") if item.strip() != ""]
 
     include_input = input("List any preferred ingredients (comma-separated). Leave blank if none: ").strip()
-    if include_input == "":
-        include_ingredients = []
-    else:
-        include_ingredients = []
-        for item in include_input.split(","):
-            cleaned = item.strip().lower()
-            if cleaned != "":
-                include_ingredients.append(cleaned)
+    include_ingredients = [item.strip().lower() for item in include_input.split(",") if item.strip() != ""]
+
+    while True:
+        time_input = input("What's the maximum cooking time you prefer (in minutes)? Leave blank for no limit: ").strip()
+        if time_input == "":
+            max_cooking_time = None
+            break
+        elif time_input.isdigit() and int(time_input) > 0:
+            max_cooking_time = int(time_input)
+            break
+        else:
+            print("Please enter a valid number greater than 0, or leave blank.")
 
     return {
         "diet": diet,
         "health_goal": health_goal,
         "avoid_ingredients": avoid_ingredients,
-        "include_ingredients": include_ingredients
+        "include_ingredients": include_ingredients,
+        "max_cooking_time": max_cooking_time
     }
