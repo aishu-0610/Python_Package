@@ -1,15 +1,3 @@
-import json
-from user_input import get_user_preferences
-from recipe_filter import filter_recipes
-from meal_plan import generate_meal_plan
-from shopping_list import create_shopping_list, display_shopping_list_gui
-
-
-def load_recipes(filepath):
-    with open(filepath, 'r') as file:
-        data = json.load(file)
-    return data
-
 def display_meal_plan(meal_plan):
     print("\nYour Personalized Meal Plan:\n")
     for i, recipe in enumerate(meal_plan, 1):
@@ -24,21 +12,30 @@ def display_meal_plan(meal_plan):
             print("-", step)
         print("--------------------------------------------------")
 
-def display_shopping_list_and_generate(meal_plan):
-    shopping_list = create_shopping_list(meal_plan)
-    display_shopping_list_gui(meal_plan, shopping_list)
+def display_shopping_list(shopping_list):
+    print("\nGenerated Shopping List:")
+    for ingredient in shopping_list:
+        print("-", ingredient)
 
 def main():
     recipes = load_recipes('recipes_with_calories.json')
     user_profile = get_user_preferences()
     filtered = filter_recipes(recipes, user_profile)
+
     meal_plan = generate_meal_plan(filtered)
 
     if not meal_plan:
         print("\nNo matching recipes found for your preferences.")
     else:
         display_meal_plan(meal_plan)
-        display_shopping_list_and_generate(meal_plan)
 
-if __name__ == "__main__":
-    main()
+        try:
+            choice = int(input("\nEnter the meal number (1, 2, etc.) to view the shopping list: "))
+            if choice < 1 or choice > len(meal_plan):
+                print("\nInvalid choice. Please select a valid meal number.")
+            else:
+                selected_recipe = meal_plan[choice - 1]
+                shopping_list = create_shopping_list([selected_recipe])
+                display_shopping_list(shopping_list)
+        except ValueError:
+            print("\nInvalid input. Please enter a valid number.")
