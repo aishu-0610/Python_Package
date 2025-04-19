@@ -1,3 +1,14 @@
+import json
+from user_input import get_user_preferences
+from recipe_filter import filter_recipes
+from meal_plan import generate_meal_plan
+from shopping_list import create_shopping_list
+
+def load_recipes(filepath):
+    with open(filepath, 'r') as file:
+        data = json.load(file)
+    return data
+
 def display_meal_plan(meal_plan):
     print("\nYour Personalized Meal Plan:\n")
     for i, recipe in enumerate(meal_plan, 1):
@@ -39,3 +50,6 @@ def main():
                 display_shopping_list(shopping_list)
         except ValueError:
             print("\nInvalid input. Please enter a valid number.")
+
+if __name__ == "__main__":
+    main()
