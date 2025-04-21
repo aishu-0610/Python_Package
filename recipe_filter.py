@@ -1,33 +1,55 @@
-def filter_recipes(data, profile):
-    max_calories = {
+def filter_recipes(recipes, user):
+    calorie_caps = {
         "weight_loss": 350,
         "muscle_gain": 600,
         "balanced": 450
     }
 
-    allowed_calories = max_calories.get(profile["health_goal"], 450)
+    if "health_goal" in user:
+        max_calories = calorie_caps.get(user["health_goal"], 450)
+    else:
+        max_calories = 450
+
+    if "diet" not in user or user["diet"] not in recipes:
+        return []
+
+    diet_recipes = recipes[user["diet"]]
     filtered = []
 
-    recipe_list = data.get(profile["diet"], {})
+    for recipe_name in diet_recipes:
+        details = diet_recipes[recipe_name]
 
-    for recipe_name in recipe_list:
-        details = recipe_list[recipe_name]
-
-        recipe_calories = details.get("calorie", 0)
-        if recipe_calories > allowed_calories:
+        if "calorie" not in details:
+            continue
+        if details["calorie"] > max_calories:
             continue
 
-        if profile["max_cooking_time"] is not None:
-            recipe_time = details.get("cooking_time", 9999)
-            if recipe_time > profile["max_cooking_time"]:
+        if "max_cooking_time" in user and user["max_cooking_time"] is not None:
+            if "cooking_time" not in details or details["cooking_time"] > user["max_cooking_time"]:
                 continue
 
-        ingredient_list = [ing.lower() for ing in details.get("ingredients", [])]
-        if any(ingredient in ingredient_list for ingredient in profile["avoid_ingredients"]):
+        ingredients = []
+        if "ingredients" in details:
+            for ingredient in details["ingredients"]:
+                ingredients.append(ingredient.lower())
+
+        avoid_list = user["avoid_ingredients"] if "avoid_ingredients" in user else []
+        found_unwanted = False
+        for avoid_item in avoid_list:
+            if avoid_item in ingredients:
+                found_unwanted = True
+                break
+        if found_unwanted:
             continue
 
-        if profile["include_ingredients"]:
-            if not any(preferred in ingredient_list for preferred in profile["include_ingredients"]):
+        preferred_list = user["include_ingredients"] if "include_ingredients" in user else []
+        if preferred_list:
+            found_preferred = False
+            for preferred_item in preferred_list:
+                if preferred_item in ingredients:
+                    found_preferred = True
+                    break
+            if not found_preferred:
                 continue
 
         filtered.append((recipe_name, details))
