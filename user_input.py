@@ -1,55 +1,39 @@
-import json
-from user_input import get_user_preferences
-from recipe_filter import filter_recipes
-from meal_plan import generate_meal_plan
-from shopping_list import create_shopping_list
+def get_user_preferences():
+    print("Welcome to the Healthy Meal Prep Assistant.")
 
-def load_recipes(filepath):
-    with open(filepath, 'r') as file:
-        data = json.load(file)
-    return data
+    diet = input("Please enter your diet type (veg or non-veg): ").strip().lower()
+    while diet != 'veg' and diet != 'non-veg':
+        print("Invalid choice. Accepted values are 'veg' or 'non-veg'.")
+        diet = input("Enter your diet type: ").strip().lower()
 
-def display_meal_plan(meal_plan):
-    print("\nYour Personalized Meal Plan:\n")
-    for i, recipe in enumerate(meal_plan, 1):
-        recipe_name, recipe_details = recipe
-        print(f"Meal {i}: {recipe_name}")
-        print(f"Calories: {recipe_details.get('calorie', 'N/A')} kcal")
-        print("Ingredients:")
-        for ingredient in recipe_details.get('ingredients', []):
-            print("-", ingredient)
-        print("Steps:")
-        for step in recipe_details.get('steps', []):
-            print("-", step)
-        print("--------------------------------------------------")
+    health_goal = input("Enter your health goal (weight_loss, muscle_gain, balanced): ").strip().lower()
+    while health_goal not in ['weight_loss', 'muscle_gain', 'balanced']:
+        print("Invalid input. Please enter: weight_loss, muscle_gain, or balanced.")
+        health_goal = input("Enter your health goal: ").strip().lower()
 
-def display_shopping_list(shopping_list):
-    print("\nGenerated Shopping List:")
-    for ingredient in shopping_list:
-        print("-", ingredient)
+    avoid_input = input("List any ingredients to avoid (comma-separated). Leave blank if none: ").strip()
+    avoid_ingredients = [item.strip().lower() for item in avoid_input.split(",") if item.strip() != ""]
 
-def main():
-    recipes = load_recipes('recipes_with_calories.json')
-    user_profile = get_user_preferences()
-    filtered = filter_recipes(recipes, user_profile)
+    include_input = input("List any preferred ingredients (comma-separated). Leave blank if none: ").strip()
+    include_ingredients = [item.strip().lower() for item in include_input.split(",") if item.strip() != ""]
 
-    meal_plan = generate_meal_plan(filtered)
+     while True:
+          time_input = input("What's the maximum cooking time you prefer (in minutes)? Leave blank for no limit: ").strip()
+        if time_input == "":
+            max_cooking_time = None
+            break
+        elif time_input.isdigit() and int(time_input) > 0:
+            max_cooking_time = int(time_input)
+            break
+        else:
+            print("Please enter a valid number greater than 0, or leave blank.")
 
-    if not meal_plan:
-        print("\nNo matching recipes found for your preferences.")
-    else:
-        display_meal_plan(meal_plan)
+    return {
+        "diet": diet,
+        "health_goal": health_goal,
+        "avoid_ingredients": avoid_ingredients,
+        "include_ingredients": include_ingredients,
+        "max_cooking_time": max_cooking_time
+    }
 
-        try:
-            choice = int(input("\nEnter the meal number (1, 2, etc.) to view the shopping list: "))
-            if choice < 1 or choice > len(meal_plan):
-                print("\nInvalid choice. Please select a valid meal number.")
-            else:
-                selected_recipe = meal_plan[choice - 1]
-                shopping_list = create_shopping_list([selected_recipe])
-                display_shopping_list(shopping_list)
-        except ValueError:
-            print("\nInvalid input. Please enter a valid number.")
 
-if __name__ == "__main__":
-    main()
