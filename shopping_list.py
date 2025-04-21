@@ -4,14 +4,20 @@ def create_shopping_list(meal_plan):
     for recipe in meal_plan:
         recipe_name = recipe[0]
         recipe_details = recipe[1]
-        ingredients = recipe_details.get("ingredients", [])
-        for item in ingredients:
-            all_ingredients.append(item)
+
+        if "ingredients" in recipe_details:
+            ingredients = recipe_details["ingredients"]
+        else:
+            ingredients = []
+
+        for ingredient in ingredients:
+            all_ingredients.append(ingredient)
 
     unique_ingredients = []
-    for item in all_ingredients:
-        if item not in unique_ingredients:
-            unique_ingredients.append(item)
+    for ingredient in all_ingredients:
+        if ingredient not in unique_ingredients:
+            unique_ingredients.append(ingredient)
 
     unique_ingredients.sort()
     return unique_ingredients
+
