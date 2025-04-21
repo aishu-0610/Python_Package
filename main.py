@@ -26,6 +26,7 @@ def display_meal_plan(meal_plan):
 def display_shopping_list(shopping_list):
     print("\nGenerated Shopping List:")
     for ingredient in shopping_list:
+
         print("-", ingredient)
 
 def main():
@@ -41,7 +42,7 @@ def main():
         display_meal_plan(meal_plan)
 
         try:
-            choice = int(input("\nEnter the meal number (1, 2, etc.) to view the shopping list: "))
+            choice = int(input("\nEnter the meal number (1, 2, etc.) to view the shopping list : "))
             if choice < 1 or choice > len(meal_plan):
                 print("\nInvalid choice. Please select a valid meal number.")
             else:
@@ -53,3 +54,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
