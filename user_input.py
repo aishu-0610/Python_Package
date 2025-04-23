@@ -1,37 +1,47 @@
 def get_user_preferences():
     print("Welcome to the Healthy Meal Prep Assistant!")
 
-    diet = input("What type of diet do you follow (veg or non-veg)? ").strip().lower()
-    while diet not in ['veg', 'non-veg']:
+    food = input("What type of diet do you follow (veg or non-veg)? ").strip().lower()
+    while food not in ['veg', 'non-veg']:
         print("Please choose either 'veg' or 'non-veg'.")
-        diet = input("What type of diet do you follow (veg or non-veg)? ").strip().lower()
+        food = input("What type of diet do you follow (veg or non-veg)? ").strip().lower()
 
-    health_goal = input("What is your main health goal (weight_loss, muscle_gain, or balanced)? ").strip().lower()
-    while health_goal not in ['weight_loss', 'muscle_gain', 'balanced']:
+    goal = input("What is your main health goal (weight_loss, muscle_gain, or balanced)? ").strip().lower()
+    while goal not in ['weight_loss', 'muscle_gain', 'balanced']:
         print("Please enter one of the following options: weight_loss, muscle_gain, or balanced.")
-        health_goal = input("What is your main health goal (weight_loss, muscle_gain, or balanced)? ").strip().lower()
+        goal = input("What is your main health goal (weight_loss, muscle_gain, or balanced)? ").strip().lower()
 
-    avoid_input = input("Are there any ingredients you want to avoid? (Separate by commas, leave blank if none): ").strip()
-    avoid_ingredients = [item.strip().lower() for item in avoid_input.split(",") if item.strip()]
+    skip_input = input("Are there any ingredients you want to avoid? (Separate by commas, leave blank if none): ").strip()
+    skip_raw = skip_input.split(",")
+    skip_list = []
+    for thing in skip_raw:
+        thing_clean = thing.strip().lower()
+        if thing_clean:
+            skip_list.append(thing_clean)
 
-    include_input = input("Are there any ingredients you'd like to include? (Separate by commas, leave blank if none): ").strip()
-    include_ingredients = [item.strip().lower() for item in include_input.split(",") if item.strip()]
+    want_input = input("Are there any ingredients you'd like to include? (Separate by commas, leave blank if none): ").strip()
+    want_raw = want_input.split(",")
+    want_list = []
+    for thing in want_raw:
+        thing_clean = thing.strip().lower()
+        if thing_clean:
+            want_list.append(thing_clean)
 
     while True:
         time_input = input("What’s the maximum cooking time you prefer (in minutes)? Leave blank if no preference: ").strip()
         if time_input == "":
-            max_cooking_time = None
+            max_time = None
             break
         elif time_input.isdigit() and int(time_input) > 0:
-            max_cooking_time = int(time_input)
+            max_time = int(time_input)
             break
         else:
             print("Please enter a valid number greater than 0, or leave it blank if you have no limit.")
 
     return {
-        "diet": diet,
-        "health_goal": health_goal,
-        "avoid_ingredients": avoid_ingredients,
-        "include_ingredients": include_ingredients,
-        "max_cooking_time": max_cooking_time
+        "diet": food,
+        "health_goal": goal,
+        "avoid_ingredients": skip_list,
+        "include_ingredients": want_list,
+        "max_cooking_time": max_time
     }
