@@ -1,4 +1,4 @@
-import random
+import random as r
 
 def generate_meal_plan(filtered_recipes, number_of_meals=3):
     meal_plan = []
@@ -12,7 +12,8 @@ def generate_meal_plan(filtered_recipes, number_of_meals=3):
     if total_available < number_of_meals:
         meals_to_pick = total_available
 
-    random_indexes = random.sample(range(total_available), meals_to_pick)
+    index_range = range(total_available)
+    random_indexes = r.sample(index_range, meals_to_pick)
 
     for index in random_indexes:
         meal_plan.append(filtered_recipes[index])
